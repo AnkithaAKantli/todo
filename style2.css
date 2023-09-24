@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: linear-gradient(120deg, #89cbef, #daf0fa);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  
+  header {
+    font-size: 1.5rem;
+  }
+  
+  header,
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h1{
+    text-align: center;
+    font-size:5rem;
+  }
+  p{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  h1,p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#063e51;
+  }
+  .heading,a{
+    font-family: cursive;
+    font-size: 4rem;
+    color:#1b5b78;
+    text-decoration: none;
+  }
+  form input,
+  form button {
+    padding: 0.4rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+  }
+  
+  form button {
+    color: #1f5b7d;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #1a5679;
+    color: white;
+  }
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    min-width: 30%;
+    list-style: none;
+  }
+  
+  .todo {
+    width: 400px;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  
+  .todo li {
+    flex: 1;
+  }
+  
+  .trash-btn,
+  .complete-btn {
+    background: #175680;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .complete-btn {
+    background: rgb(25, 80, 112);
+  }
+  
+  .todo-item {
+    padding: 0rem 0.5rem;
+  }
+  
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  .fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  
+  select {
+    appearance: none;
+    outline: none;
+    border: none;
+  }
+  
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .para{
+    font-family: cursive;
+    font-size: 3rem;
+  }
+  select {
+    color: #165269;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+  }
+  
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #0b4359;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  .select:hover::after {
+    background: white;
+    color: #0d5565;
+  }
+  .delete-btn{
+    width: 40px;
+    padding: 3px;
+    color:rgb(21, 20, 20);
+  }
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1rem;
+    }
+  
+    p {
+      font-size: 0.5rem;
+    }
+  
+    form input, form button {
+      font-size: 0.5rem;
+    }
+  
+    .todo {
+      font-size: 0.8rem;
+    }
+  
+    .trash-btn, .complete-btn {
+      padding: 0.2rem;
+      font-size: 0.4rem;
+    }
+  
+    .fall {
+      transform: translateY(3rem) rotateZ(20deg);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
